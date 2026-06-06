@@ -110,7 +110,19 @@
         .pub-title a { color: inherit; text-decoration: none; }
         .pub-venue { font-style: italic; color: #555; font-size: 0.95em; margin-top: 2px; }
         .pub-authors { font-size: 0.95em; color: #444; margin-top: 4px; }
+        .pub-tldr { font-size: 0.93em; color: #333; margin-top: 4px; }
+        .pub-tldr strong { color: #0366d6; }
         .pub-links a { font-size: 0.9em; margin-right: 8px; }
+
+        /* seeking-internship banner */
+        .seeking {
+            margin-top: 14px;
+            background: #fff8e1;
+            border-left: 4px solid #f0ad4e;
+            padding: 8px 14px;
+            border-radius: 4px;
+            font-size: 0.97em;
+        }
 
         /* accessibility helpers */
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0; }
@@ -152,50 +164,15 @@
                 and <strong>cloud–edge collaborative reasoning optimization</strong>. I previously worked as an
                 integrated circuit design engineer responsible for chip front-end design and verification.
             </p>
+            <p class="seeking">
+                🔍 <strong>I am actively looking for research internship opportunities (2026).</strong>
+                Feel free to <a href="mailto:Jianshu.She@MBZUAI.com">reach out</a>!
+            </p>
         </div>
     </div>
 
     <h2>Publications</h2>
     <ul class="pub-list" aria-label="Publications list">
-        <li class="pub-item">
-            <div class="pub-title">
-                <a href="https://arxiv.org/abs/2504.00424" target="_blank" rel="noopener noreferrer">
-                    Hawkeye: Model Collaboration for Efficient Reasoning
-                </a>
-            </div>
-            <div class="pub-authors">
-                <strong>Jianshu She</strong>, Zhuohao Li, Zhemin Huang, Qi Li, Peiran Xu, Haonan Li, Qirong Ho
-            </div>
-            <div class="pub-venue">COLM 2025</div>
-            <div class="pub-links">[<a href="https://arxiv.org/abs/2504.00424" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
-        </li>
-
-        <li class="pub-item">
-            <div class="pub-title">
-                <a href="https://arxiv.org/abs/2504.07878" target="_blank" rel="noopener noreferrer">
-                    Token-level routing inference system for edge devices
-                </a>
-            </div>
-            <div class="pub-authors">
-                <strong>Jianshu She</strong>, Wenhao Zheng, Zhengzhong Liu, Hongyi Wang, Eric Xing, Huaxiu Yao, Qirong Ho
-            </div>
-            <div class="pub-venue">ACL Demo 2025</div>
-            <div class="pub-links">[<a href="https://arxiv.org/abs/2504.07878" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
-        </li>
-
-        <li class="pub-item">
-            <div class="pub-title">
-                <a href="https://arxiv.org/abs/2508.01892" target="_blank" rel="noopener noreferrer">
-                    Linear Steerability in Language Models: When It Emerges and How It Evolves
-                </a>
-            </div>
-            <div class="pub-authors">
-                <strong>Jianshu She</strong>, Xinyue Li, Eric Xing, Zhengzhong Liu, Qirong Ho
-            </div>
-            <div class="pub-venue">EMNLP 2025</div>
-            <div class="pub-links">[<a href="https://arxiv.org/abs/2508.01892" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
-        </li>
-
         <li class="pub-item">
             <div class="pub-title">
                 <a href="https://arxiv.org/abs/2506.14965" target="_blank" rel="noopener noreferrer">
@@ -208,8 +185,79 @@
                 Richard Fan, <strong>Jianshu She</strong>, Chengqian Gao, Abulhair Saparov, Haonan Li,
                 Taylor W Killian, Mikhail Yurochkin, Zhengzhong Liu, Eric P Xing, Zhiting Hu
             </div>
-            <div class="pub-venue">NeurIPS Datasets & Benchmarks 2025</div>
+            <div class="pub-venue">NeurIPS Datasets &amp; Benchmarks 2025</div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> A large-scale, cross-domain study and benchmark of RL for LLM reasoning, revealing how reasoning skills transfer (and fail to transfer) across domains.</div>
             <div class="pub-links">[<a href="https://arxiv.org/abs/2506.14965" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">
+                <a href="https://arxiv.org/abs/2504.08791" target="_blank" rel="noopener noreferrer">
+                    Prima.cpp: Fast 30-70B LLM Inference on Heterogeneous and Low-Resource Home Clusters
+                </a>
+            </div>
+            <div class="pub-authors">
+                Zonghang Li, Tao Li, Wenjiao Feng, Rongxing Xiao, <strong>Jianshu She</strong>, Hong Huang, Mohsen Guizani, Hongfang Yu, Qirong Ho, Wei Xiang, Steve Liu
+            </div>
+            <div class="pub-venue">ICLR 2026</div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> Runs 30–70B LLMs on everyday home devices by distributing inference across heterogeneous, low-resource CPUs/GPUs.</div>
+            <div class="pub-links">[<a href="https://arxiv.org/abs/2504.08791" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">
+                <a href="https://arxiv.org/abs/2601.11589" target="_blank" rel="noopener noreferrer">
+                    LAPS: A Length-Aware-Prefill LLM Serving System
+                </a>
+            </div>
+            <div class="pub-authors">
+                <strong>Jianshu She</strong>, Zonghang Li, Hongchao Du, Shangyu Wu, Wenhao Zheng, Eric Xing, Zhengzhong Liu, Huaxiu Yao, Jason Xue, Qirong Ho
+            </div>
+            <div class="pub-venue">MLSys 2026 (Oral)</div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> An LLM serving system that schedules prefill by predicted output length, cutting latency and improving throughput under mixed workloads.</div>
+            <div class="pub-links">[<a href="https://arxiv.org/abs/2601.11589" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">
+                <a href="https://arxiv.org/abs/2504.00424" target="_blank" rel="noopener noreferrer">
+                    Hawkeye: Model Collaboration for Efficient Reasoning
+                </a>
+            </div>
+            <div class="pub-authors">
+                <strong>Jianshu She</strong>, Zhuohao Li, Zhemin Huang, Qi Li, Peiran Xu, Haonan Li, Qirong Ho
+            </div>
+            <div class="pub-venue">COLM 2025</div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> A large model emits compact reasoning that a small model expands, so most tokens are produced cheaply — speeding up chain-of-thought without losing accuracy.</div>
+            <div class="pub-links">[<a href="https://arxiv.org/abs/2504.00424" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">
+                <a href="https://arxiv.org/abs/2508.01892" target="_blank" rel="noopener noreferrer">
+                    Linear Steerability in Language Models: When It Emerges and How It Evolves
+                </a>
+            </div>
+            <div class="pub-authors">
+                <strong>Jianshu She</strong>, Xinyue Li, Eric Xing, Zhengzhong Liu, Qirong Ho
+            </div>
+            <div class="pub-venue">EMNLP 2025</div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> Studies when linearly-steerable directions emerge in language models and how they evolve over the course of training.</div>
+            <div class="pub-links">[<a href="https://arxiv.org/abs/2508.01892" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">
+                <a href="https://arxiv.org/abs/2504.07878" target="_blank" rel="noopener noreferrer">
+                    Token-level routing inference system for edge devices
+                </a>
+            </div>
+            <div class="pub-authors">
+                <strong>Jianshu She</strong>, Wenhao Zheng, Zhengzhong Liu, Hongyi Wang, Eric Xing, Huaxiu Yao, Qirong Ho
+            </div>
+            <div class="pub-venue">ACL Demo 2025</div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> An edge inference system that routes individual tokens between a small on-device model and a large cloud model to balance quality against cost and latency.</div>
+            <div class="pub-links">[<a href="https://arxiv.org/abs/2504.07878" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
         </li>
 
         <li class="pub-item">
@@ -224,34 +272,23 @@
                 Yonghao Zhuang, Aaryamonvikram Singh, Xuezhi Liang, Anze Xie, <strong>Jianshu She</strong>, Desai Fan, Chengqian Gao, Liqun Ma, Mikhail Yurochkin, John Maggs, Xuezhe Ma, Guowei He, Zhiting Hu,
                 Zhengzhong Liu, Eric P Xing
             </div>
-            <div class="pub-venue">2025</div>
+            <div class="pub-venue">arXiv 2025</div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> A parameter-efficient reasoning system that delivers strong reasoning performance with a much smaller model footprint.</div>
             <div class="pub-links">[<a href="https://arxiv.org/abs/2509.07604" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
         </li>
 
         <li class="pub-item">
             <div class="pub-title">
-                <a href="https://arxiv.org/abs/2504.08791" target="_blank" rel="noopener noreferrer">
-                    Prima.cpp: Fast 30-70B LLM Inference on Heterogeneous and Low-Resource Home Clusters
+                <a href="https://arxiv.org/abs/2510.10168" target="_blank" rel="noopener noreferrer">
+                    Concise Reasoning in the Lens of Lagrangian Optimization
                 </a>
             </div>
             <div class="pub-authors">
-                Zonghang Li, Tao Li, Wenjiao Feng, Rongxing Xiao, <strong>Jianshu She</strong>, Hong Huang, Mohsen Guizani, Hongfang Yu, Qirong Ho, Wei Xiang, Steve Liu
+                Chengqian Gao, Haonan Li, Taylor W. Killian, <strong>Jianshu She</strong>, Renxi Wang, Liqun Ma, Zhoujun Cheng, Shibo Hao, Zhiqiang Xu
             </div>
-            <div class="pub-venue">ICLR 2026</div>
-            <div class="pub-links">[<a href="https://arxiv.org/abs/2504.08791" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
-        </li>
-
-        <li class="pub-item">
-            <div class="pub-title">
-                <a href="https://arxiv.org/abs/2601.11589" target="_blank" rel="noopener noreferrer">
-                    LAPS: A Length-Aware-Prefill LLM Serving System
-                </a>
-            </div>
-            <div class="pub-authors">
-                <strong>Jianshu She</strong>, Zonghang Li, Hongchao Du, Shangyu Wu, Wenhao Zheng, Eric Xing, Zhengzhong Liu, Huaxiu Yao, Jason Xue, Qirong Ho
-            </div>
-            <div class="pub-venue">MLSys 2026 (Oral)</div>
-            <div class="pub-links">[<a href="https://arxiv.org/abs/2601.11589" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
+            <div class="pub-venue">arXiv 2025</div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> Frames concise reasoning as constrained optimization — minimize response length subject to a performance constraint — solved via Lagrangian relaxation (PALU).</div>
+            <div class="pub-links">[<a href="https://arxiv.org/abs/2510.10168" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
         </li>
 
         <li class="pub-item">
@@ -264,6 +301,7 @@
                 <strong>Jianshu She</strong>
             </div>
             <div class="pub-venue">arXiv 2026</div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> An OS-inspired resource manager for LLM agents — MLFQ scheduling plus a context lifecycle manager — to prevent scheduling failures and context degradation.</div>
             <div class="pub-links">[<a href="https://arxiv.org/abs/2603.13110" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
         </li>
 
@@ -277,6 +315,7 @@
                 <strong>Jianshu She</strong>
             </div>
             <div class="pub-venue">arXiv 2026</div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> Splits agents into an enterprise-side privacy agent and a cloud-side reasoning agent, using context-aware dynamic sanitization to keep sensitive data on-prem.</div>
             <div class="pub-links">[<a href="https://arxiv.org/abs/2603.08221" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
         </li>
 
@@ -290,20 +329,8 @@
                 Akhmed Sakip, Erland Hilman Fuadi, Omar Sayedelahl, Zonghang Li, <strong>Jianshu She</strong>, Alham Fikri Aji, Steve Liu, Eric Xing, Qirong Ho
             </div>
             <div class="pub-venue">arXiv 2026</div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> Jointly adapts global batch size, parallelism strategy, and micro-batch size during training, guided by Goodput, to maximize convergence per unit of wall-clock time.</div>
             <div class="pub-links">[<a href="https://arxiv.org/abs/2604.26687" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
-        </li>
-
-        <li class="pub-item">
-            <div class="pub-title">
-                <a href="https://arxiv.org/abs/2510.10168" target="_blank" rel="noopener noreferrer">
-                    Concise Reasoning in the Lens of Lagrangian Optimization
-                </a>
-            </div>
-            <div class="pub-authors">
-                Chengqian Gao, Haonan Li, Taylor W. Killian, <strong>Jianshu She</strong>, Renxi Wang, Liqun Ma, Zhoujun Cheng, Shibo Hao, Zhiqiang Xu
-            </div>
-            <div class="pub-venue">arXiv 2025</div>
-            <div class="pub-links">[<a href="https://arxiv.org/abs/2510.10168" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
         </li>
     </ul>
 

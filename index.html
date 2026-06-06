@@ -112,6 +112,7 @@
         .pub-authors { font-size: 0.95em; color: #444; margin-top: 4px; }
         .pub-tldr { font-size: 0.93em; color: #333; margin-top: 4px; }
         .pub-tldr strong { color: #0366d6; }
+        .fa-badge { display: inline-block; font-style: normal; font-size: 0.78em; color: #1a7f37; background: #dafbe1; border-radius: 3px; padding: 1px 6px; margin-left: 8px; vertical-align: middle; }
         .pub-links a { font-size: 0.9em; margin-right: 8px; }
 
         /* seeking-internship banner */
@@ -175,19 +176,58 @@
     <ul class="pub-list" aria-label="Publications list">
         <li class="pub-item">
             <div class="pub-title">
-                <a href="https://arxiv.org/abs/2506.14965" target="_blank" rel="noopener noreferrer">
-                    Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain Perspective
+                <a href="https://arxiv.org/abs/2601.11589" target="_blank" rel="noopener noreferrer">
+                    LAPS: A Length-Aware-Prefill LLM Serving System
                 </a>
             </div>
             <div class="pub-authors">
-                Zhoujun Cheng, Shibo Hao, Tianyang Liu, Fan Zhou, Yutao Xie, Feng Yao, Yuexin Bian,
-                Yonghao Zhuang, Nilabjo Dey, Yuheng Zha, Yi Gu, Kun Zhou, Yuqi Wang, Yuan Li,
-                Richard Fan, <strong>Jianshu She</strong>, Chengqian Gao, Abulhair Saparov, Haonan Li,
-                Taylor W Killian, Mikhail Yurochkin, Zhengzhong Liu, Eric P Xing, Zhiting Hu
+                <strong>Jianshu She</strong>, Zonghang Li, Hongchao Du, Shangyu Wu, Wenhao Zheng, Eric Xing, Zhengzhong Liu, Huaxiu Yao, Jason Xue, Qirong Ho
             </div>
-            <div class="pub-venue">NeurIPS Datasets &amp; Benchmarks 2025</div>
-            <div class="pub-tldr"><strong>TL;DR:</strong> A large-scale, cross-domain study and benchmark of RL for LLM reasoning, revealing how reasoning skills transfer (and fail to transfer) across domains.</div>
-            <div class="pub-links">[<a href="https://arxiv.org/abs/2506.14965" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
+            <div class="pub-venue">MLSys 2026 (Oral)<span class="fa-badge">First author</span></div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> An LLM serving system that schedules prefill by predicted output length, cutting latency and improving throughput under mixed workloads.</div>
+            <div class="pub-links">[<a href="https://arxiv.org/abs/2601.11589" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">
+                <a href="https://arxiv.org/abs/2504.00424" target="_blank" rel="noopener noreferrer">
+                    Hawkeye: Model Collaboration for Efficient Reasoning
+                </a>
+            </div>
+            <div class="pub-authors">
+                <strong>Jianshu She</strong>, Zhuohao Li, Zhemin Huang, Qi Li, Peiran Xu, Haonan Li, Qirong Ho
+            </div>
+            <div class="pub-venue">COLM 2025<span class="fa-badge">First author</span></div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> A large model emits compact reasoning that a small model expands, so most tokens are produced cheaply — speeding up chain-of-thought without losing accuracy.</div>
+            <div class="pub-links">[<a href="https://arxiv.org/abs/2504.00424" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">
+                <a href="https://arxiv.org/abs/2508.01892" target="_blank" rel="noopener noreferrer">
+                    Linear Steerability in Language Models: When It Emerges and How It Evolves
+                </a>
+            </div>
+            <div class="pub-authors">
+                <strong>Jianshu She</strong>, Xinyue Li, Eric Xing, Zhengzhong Liu, Qirong Ho
+            </div>
+            <div class="pub-venue">EMNLP 2025<span class="fa-badge">First author</span></div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> Studies when linearly-steerable directions emerge in language models and how they evolve over the course of training.</div>
+            <div class="pub-links">[<a href="https://arxiv.org/abs/2508.01892" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
+        </li>
+
+        <li class="pub-item">
+            <div class="pub-title">
+                <a href="https://arxiv.org/abs/2504.07878" target="_blank" rel="noopener noreferrer">
+                    Token-level routing inference system for edge devices
+                </a>
+            </div>
+            <div class="pub-authors">
+                <strong>Jianshu She</strong>, Wenhao Zheng, Zhengzhong Liu, Hongyi Wang, Eric Xing, Huaxiu Yao, Qirong Ho
+            </div>
+            <div class="pub-venue">ACL Demo 2025<span class="fa-badge">First author</span></div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> An edge inference system that routes individual tokens between a small on-device model and a large cloud model to balance quality against cost and latency.</div>
+            <div class="pub-links">[<a href="https://arxiv.org/abs/2504.07878" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
         </li>
 
         <li class="pub-item">
@@ -206,58 +246,47 @@
 
         <li class="pub-item">
             <div class="pub-title">
-                <a href="https://arxiv.org/abs/2601.11589" target="_blank" rel="noopener noreferrer">
-                    LAPS: A Length-Aware-Prefill LLM Serving System
+                <a href="https://arxiv.org/abs/2506.14965" target="_blank" rel="noopener noreferrer">
+                    Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain Perspective
                 </a>
             </div>
             <div class="pub-authors">
-                <strong>Jianshu She</strong>, Zonghang Li, Hongchao Du, Shangyu Wu, Wenhao Zheng, Eric Xing, Zhengzhong Liu, Huaxiu Yao, Jason Xue, Qirong Ho
+                Zhoujun Cheng, Shibo Hao, Tianyang Liu, Fan Zhou, Yutao Xie, Feng Yao, Yuexin Bian,
+                Yonghao Zhuang, Nilabjo Dey, Yuheng Zha, Yi Gu, Kun Zhou, Yuqi Wang, Yuan Li,
+                Richard Fan, <strong>Jianshu She</strong>, Chengqian Gao, Abulhair Saparov, Haonan Li,
+                Taylor W Killian, Mikhail Yurochkin, Zhengzhong Liu, Eric P Xing, Zhiting Hu
             </div>
-            <div class="pub-venue">MLSys 2026 (Oral)</div>
-            <div class="pub-tldr"><strong>TL;DR:</strong> An LLM serving system that schedules prefill by predicted output length, cutting latency and improving throughput under mixed workloads.</div>
-            <div class="pub-links">[<a href="https://arxiv.org/abs/2601.11589" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
+            <div class="pub-venue">NeurIPS Datasets &amp; Benchmarks 2025</div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> A large-scale, cross-domain study and benchmark of RL for LLM reasoning, revealing how reasoning skills transfer (and fail to transfer) across domains.</div>
+            <div class="pub-links">[<a href="https://arxiv.org/abs/2506.14965" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
         </li>
 
         <li class="pub-item">
             <div class="pub-title">
-                <a href="https://arxiv.org/abs/2504.00424" target="_blank" rel="noopener noreferrer">
-                    Hawkeye: Model Collaboration for Efficient Reasoning
+                <a href="https://arxiv.org/abs/2603.13110" target="_blank" rel="noopener noreferrer">
+                    AgentRM: An OS-Inspired Resource Manager for LLM Agent Systems
                 </a>
             </div>
             <div class="pub-authors">
-                <strong>Jianshu She</strong>, Zhuohao Li, Zhemin Huang, Qi Li, Peiran Xu, Haonan Li, Qirong Ho
+                <strong>Jianshu She</strong>
             </div>
-            <div class="pub-venue">COLM 2025</div>
-            <div class="pub-tldr"><strong>TL;DR:</strong> A large model emits compact reasoning that a small model expands, so most tokens are produced cheaply — speeding up chain-of-thought without losing accuracy.</div>
-            <div class="pub-links">[<a href="https://arxiv.org/abs/2504.00424" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
+            <div class="pub-venue">arXiv 2026<span class="fa-badge">First author</span></div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> An OS-inspired resource manager for LLM agents — MLFQ scheduling plus a context lifecycle manager — to prevent scheduling failures and context degradation.</div>
+            <div class="pub-links">[<a href="https://arxiv.org/abs/2603.13110" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
         </li>
 
         <li class="pub-item">
             <div class="pub-title">
-                <a href="https://arxiv.org/abs/2508.01892" target="_blank" rel="noopener noreferrer">
-                    Linear Steerability in Language Models: When It Emerges and How It Evolves
+                <a href="https://arxiv.org/abs/2603.08221" target="_blank" rel="noopener noreferrer">
+                    SplitAgent: A Privacy-Preserving Distributed Architecture for Enterprise-Cloud Agent Collaboration
                 </a>
             </div>
             <div class="pub-authors">
-                <strong>Jianshu She</strong>, Xinyue Li, Eric Xing, Zhengzhong Liu, Qirong Ho
+                <strong>Jianshu She</strong>
             </div>
-            <div class="pub-venue">EMNLP 2025</div>
-            <div class="pub-tldr"><strong>TL;DR:</strong> Studies when linearly-steerable directions emerge in language models and how they evolve over the course of training.</div>
-            <div class="pub-links">[<a href="https://arxiv.org/abs/2508.01892" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
-        </li>
-
-        <li class="pub-item">
-            <div class="pub-title">
-                <a href="https://arxiv.org/abs/2504.07878" target="_blank" rel="noopener noreferrer">
-                    Token-level routing inference system for edge devices
-                </a>
-            </div>
-            <div class="pub-authors">
-                <strong>Jianshu She</strong>, Wenhao Zheng, Zhengzhong Liu, Hongyi Wang, Eric Xing, Huaxiu Yao, Qirong Ho
-            </div>
-            <div class="pub-venue">ACL Demo 2025</div>
-            <div class="pub-tldr"><strong>TL;DR:</strong> An edge inference system that routes individual tokens between a small on-device model and a large cloud model to balance quality against cost and latency.</div>
-            <div class="pub-links">[<a href="https://arxiv.org/abs/2504.07878" target="_blank" rel="noopener noreferrer">PDF</a>]</div>
+            <div class="pub-venue">arXiv 2026<span class="fa-badge">First author</span></div>
+            <div class="pub-tldr"><strong>TL;DR:</strong> Splits agents into an enterprise-side privacy agent and a cloud-side reasoning agent, using context-aware dynamic sanitization to keep sensitive data on-prem.</div>
+            <div class="pub-links">[<a href="https://arxiv.org/abs/2603.08221" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
         </li>
 
         <li class="pub-item">
@@ -289,34 +318,6 @@
             <div class="pub-venue">arXiv 2025</div>
             <div class="pub-tldr"><strong>TL;DR:</strong> Frames concise reasoning as constrained optimization — minimize response length subject to a performance constraint — solved via Lagrangian relaxation (PALU).</div>
             <div class="pub-links">[<a href="https://arxiv.org/abs/2510.10168" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
-        </li>
-
-        <li class="pub-item">
-            <div class="pub-title">
-                <a href="https://arxiv.org/abs/2603.13110" target="_blank" rel="noopener noreferrer">
-                    AgentRM: An OS-Inspired Resource Manager for LLM Agent Systems
-                </a>
-            </div>
-            <div class="pub-authors">
-                <strong>Jianshu She</strong>
-            </div>
-            <div class="pub-venue">arXiv 2026</div>
-            <div class="pub-tldr"><strong>TL;DR:</strong> An OS-inspired resource manager for LLM agents — MLFQ scheduling plus a context lifecycle manager — to prevent scheduling failures and context degradation.</div>
-            <div class="pub-links">[<a href="https://arxiv.org/abs/2603.13110" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
-        </li>
-
-        <li class="pub-item">
-            <div class="pub-title">
-                <a href="https://arxiv.org/abs/2603.08221" target="_blank" rel="noopener noreferrer">
-                    SplitAgent: A Privacy-Preserving Distributed Architecture for Enterprise-Cloud Agent Collaboration
-                </a>
-            </div>
-            <div class="pub-authors">
-                <strong>Jianshu She</strong>
-            </div>
-            <div class="pub-venue">arXiv 2026</div>
-            <div class="pub-tldr"><strong>TL;DR:</strong> Splits agents into an enterprise-side privacy agent and a cloud-side reasoning agent, using context-aware dynamic sanitization to keep sensitive data on-prem.</div>
-            <div class="pub-links">[<a href="https://arxiv.org/abs/2603.08221" target="_blank" rel="noopener noreferrer">ArXiv</a>]</div>
         </li>
 
         <li class="pub-item">

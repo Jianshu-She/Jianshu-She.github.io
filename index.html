@@ -113,6 +113,12 @@
         .pub-tldr { font-size: 0.93em; color: #333; margin-top: 4px; }
         .pub-tldr strong { color: #0366d6; }
         .fa-badge { display: inline-block; font-style: normal; font-size: 0.78em; color: #1a7f37; background: #dafbe1; border-radius: 3px; padding: 1px 6px; margin-left: 8px; vertical-align: middle; }
+
+        /* news list */
+        .news-list { list-style: none; padding-left: 0; margin: 0; }
+        .news-item { margin-bottom: 10px; display: flex; gap: 12px; align-items: baseline; }
+        .news-date { flex: 0 0 110px; color: #777; font-size: 0.9em; font-variant-numeric: tabular-nums; }
+        .news-body { flex: 1; }
         .pub-links a { font-size: 0.9em; margin-right: 8px; }
 
         /* seeking-internship banner */
@@ -171,6 +177,22 @@
             </p>
         </div>
     </div>
+
+    <h2>News</h2>
+    <ul class="news-list" aria-label="News">
+        <li class="news-item">
+            <span class="news-date">Jun 2026</span>
+            <span class="news-body">Joining the <strong>Tencent Hunyuan Infra</strong> team.</span>
+        </li>
+        <li class="news-item">
+            <span class="news-date">Apr 2026</span>
+            <span class="news-body">Attending <strong>MLSys 2026</strong> to present our work.</span>
+        </li>
+        <li class="news-item">
+            <span class="news-date">May 2025</span>
+            <span class="news-body">Joined the <strong>MBZUAI IFM</strong> team.</span>
+        </li>
+    </ul>
 
     <h2>Publications</h2>
     <ul class="pub-list" aria-label="Publications list">
